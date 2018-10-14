@@ -1,17 +1,22 @@
 {
   "name": "Anti paparazi",
-  "version": "2.0",
+  "version": "1.0",
   "manifest_version": 2,
 
-  "description": "This extension will remove all the picture from  the current website",
+  "description": "This chrome extension will remove all the photos from a webpage",
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
       "js": ["content.js"]
     }
   ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "browser_action": {
-    "default_icon": "icon.png"
+    "default_icon": "icon128.png"
   },
   "background": {
     "scripts": ["background.js"],
